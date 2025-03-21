@@ -1,15 +1,35 @@
-Welcome to your new dbt project!
+# dbt_scooters
 
-### Using the starter project
+## Описание проекта
 
-Try running the following commands:
-- dbt run
-- dbt test
+`dbt_scooters` — это аналитический проект, направленный на моделирование данных для компании, занимающейся прокатом электросамокатов. Основная цель проекта — создание прозрачной и надежной структуры данных, которая будет поддерживать бизнес-аналитику и принятие решений.
 
+## Структура проекта
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+В проекте используются модели dbt для трансформации данных, а также тесты и документация для обеспечения качества данных.
+
+## Быстрый старт
+
+### Установка и настройка
+
+1. Убедитесь, что у вас установлен dbt.
+2. Клонируйте репозиторий:  
+   ```bash
+   git clone <URL вашего репозитория>
+   cd dbt_scooters
+Настройте файл profiles.yml в соответствии с вашей средой.
+
+## Основные команды dbt
+
+- `dbt debug` - проверка подключения к хранилищу данных (проверка профиля)
+- `dbt parse` - парсинг файлов проекта (проверка корректности)
+- `dbt compile` - компилирует dbt-модели и создает SQL-файлы
+- `dbt run` - материализация моделей в таблицы и представления
+- `dbt test` - запускает тесты для проверки качества данных
+- `dbt seed` - загружает данные в таблицы из CSV-файлов
+- `dbt build` - основная команда, комбинирует run, test и seed
+- `dbt docs generate` - генерирует документацию проекта
+- `dbt docs serve` - запускает локальный сервер для просмотра документации
+
+Поддержка
+Если у вас возникли вопросы или предложения, пожалуйста, откройте issue в репозитории или свяжитесь с командой разработчиков.
