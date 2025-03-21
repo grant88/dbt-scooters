@@ -1,0 +1,1 @@
+select 'bbbb' as b

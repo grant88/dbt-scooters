@@ -1,0 +1,1 @@
+select 'ccc' as a

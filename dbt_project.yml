@@ -16,5 +16,8 @@ clean-targets:
 
 models:
   dbt_scooters:
-    example:
-      +materialized: view
+    +materialized: table
+    +on_schema_change: "append_new_columns"
+    finance:
+      +schema: "finance" # the custom_schema_name. default_schema is "schema" property from profiles.yml. 
+      # all tables here will be created at {{default_schema}}_{{custom_schema_name}}.table_N
